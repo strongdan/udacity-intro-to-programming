@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row">
+{% for s in sections %}
+	<div class="panel" style="background-image: url({{ s.image_url }})" alt="{{s.alt}}">
+		<h2><a class="panel-title" href="{{ s.href }}">{{ s.title }}</a></h2>
+	</div>
+{% endfor %}
+</div>
+
+{% endblock %}

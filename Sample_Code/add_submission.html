@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 class="title">Nanodegree Student Projects</h1>
+<div class="section">
+	<p class="description">
+		When you complete the final project submission your project reviewer will
+		give you a secret code which will let you add your own project to this list.
+	</p>
+</div>
+
+<h2 class="section-title">Submit your Project!</h2>
+
+<div class="section">
+	<form class="submission-form" action="/student_submissions/add" method="post">
+
+		<label for="name"><b>Name to Display</b></label>
+		<br>
+		{% if name_error %}
+		<span class="error">{{ name_error }}</span>
+		<br>
+		{% endif %}
+		<input type="text" name="name" id="name" value="{{name}}" placeholder="Andy Brown" required size="40"></input>
+		<br>
+
+		<label for="link"><b>URL to your Web Page</b><br>Page must be hosted on appspot.</label>
+		<br>
+		{% if link_error %}
+		<span class="error">{{ link_error }}</span>
+		<br>
+		{% endif %}
+		<input type="url" name="link" id="link" value="{{link}}" placeholder="http://www.learn-2-code.appspot.com" required size="40"></input>
+		<br>
+
+		<label for="description"><b>Project Description</b></label>
+		<br>
+		{% if description_error %}
+		<span class="error">{{ description_error }}</span>
+		<br>
+		{% endif %}
+		<textarea value="{{description}}" placeholder="This project uses JavaScript to create simple animations." name="description" id="description" maxlength="250" cols="33" rows="10" required ></textarea>
+		<br>
+
+		<label for="image-url"><b>URL to background image (optional)</b><br>This will be displayed behind the link to your project </label>
+		<br>
+		{% if image_url_error %}
+		<span class="error">{{ image_url_error }}</span>
+		<br>
+		{% endif %}
+		<input type="url" name="image_url" id="image-url" size="40" value="{{image_url}}" placeholder="http://i.imgur.com/updkV8U.jpg" value="{{image_url}}"></input>
+		<br>
+
+		<label for="secret-key"><b>Secret Key</b><br>Your project reviewer will give you this when you complete the final submission.</label>
+		<br>
+		{% if secret_key_error %}
+		<span class="error" name="secret_key_error">{{ secret_key_error }}</span>
+		<br>
+		{% endif %}
+		<input type="text" name="secret_key" id="secret-key" size="40" required value="{{secret_key}}" placeholder="abc123" ></input>
+		<br>
+		<input id="share-project" class="button button-secondary" type="submit" value="Share your Project!">
+	</form>
+</div>
+{% endblock %}

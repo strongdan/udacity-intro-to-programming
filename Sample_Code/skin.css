@@ -1,0 +1,431 @@
+/* COURSE 1:
+In general, you don't want to style entire elements
+(like I do here, where I apply styles to body, h1, h2,
+and a elements). But notice that these are all very general
+style guidelines, like fonts, colors, etc... */
+body {
+  font-family: "Whitney SSm A","Whitney SSm B","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #303030;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+	color: white;
+	text-align:center;
+}
+
+h2 {
+	color : #294860;
+}
+
+h3 {
+	margin-bottom: 0;
+}
+
+/* COURSE 1:
+The text-decoration rule I've set here prevents links from
+having underlines (which I don't like).*/
+a {
+	color : #1199c3;
+	text-decoration: none;
+}
+
+/* COURSE 1:
+This changes the color when I hover my mouse over a link.
+I could also have specified a:active and a:visited.*/
+a:hover {
+	color: #307699;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img,
+embed,
+object,
+video, {
+	max-width : 100%;
+}
+
+.nav a, button {
+	min-width: 48px;
+	min-height: 48px;
+}
+.row {
+	width : 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header,
+.footer {
+	background-color: #294860;
+	color: white;
+}
+
+.footer {
+	padding: 20px 20px 60px 20px;
+}
+
+/* COURSE 1:
+I really struggled to get this image to behave
+the way I wanted it to. I'm not too happy with this
+CSS since I don't really understand why it works.
+But... it works and I decided not to worry about it.*/
+.top-image {
+	min-width : 60px;
+	max-width: 100px;
+	width : 10%;
+	min-height : 60px;
+	float: left;
+	margin : 10px 5px;
+}
+
+.header h1,
+.footer {
+	display: block;
+	width : 100%;
+	text-align: center;
+	color: white;
+}
+
+.title {
+	margin-bottom: 0.5em;
+	color: #294860;
+}
+
+/* COURSE 1:
+The rule "list-style-type: none;" removes the bullet points
+from the list.*/
+.nav-list {
+	width:100%;
+	list-style-type:none;
+	text-align: center;
+	padding : 0;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+/* COURSE 5:
+The most interesting rule here is the first one. By setting
+"display: block;", I'm telling the links to take up the whole
+width. This is me designing "mobile-first". You'll notice later
+in the CSS that this display is overridden if the screen width
+is large enough.*/
+.nav-item a {
+	display: block;
+	padding: 0.5em 1em;
+	font-size : 1.3em;
+	color : rgba(255, 255, 255, 0.65);
+}
+
+.nav-item a:hover {
+	color: #307699;
+}
+
+.error {
+	color: #CD0E3E;
+	font-size: smaller;
+}
+
+/* COURSE 5: The @media statement allows me to write
+CSS that only applies under certain circumstances.
+It's helpful for making pages that look good on mobile.*/
+@media screen and (max-width:750px) {
+	body {
+		font-size : 16px;
+	}
+}
+
+@media screen and (max-width:580px) {
+	body {
+		font-size : 14px;
+	}
+	.top-image {
+		display: none;
+	}
+}
+
+@media screen and (max-width:460px) {
+	body {
+		font-size : 12px;
+	}
+}
+
+/* This is the CSS that gets triggered when the width
+is bigger than 520 px.*/
+@media screen and (min-width:520px) {
+	.nav-list {
+		text-align: left;
+		float:right;
+		width: 100%;
+	}
+	.nav-item {
+		display: inline-block;
+	}
+	.nav-item-left {
+		float: left;
+	}
+	.nav-item-right {
+		float: right;
+	}
+}
+
+/* COURSE 1:
+I decided to use a generic idea of "sections"
+throughout all pages. Initially I was individually styling
+the "topic" sections on the resource pages AND the "course"
+sections on the notes page. But I realized I wanted them to
+look the same so I generalized.*/
+.section-title {
+	margin-bottom: 0.5em;
+	background-color: #DDD;
+	padding: 0.2em 0.2em;
+}
+
+.section,
+.section ul,
+.section ol {
+	padding-left: 0.4em;
+	width: 100%;
+}
+
+.section li {
+	margin-bottom: 1em;
+}
+
+.section p {
+	margin : 0;
+	margin-left: 0.4em;
+	padding-right:0.4em;
+}
+
+.section-title h2 {
+	margin : 0;
+}
+
+.section ul,
+.section ol {
+	list-style-type: none;
+}
+
+/* I wanted all "table-of-contents" sections to look
+the same. */
+
+.table-of-contents-entry {
+	padding: 0.4em;
+}
+
+.video {
+	max-width: 600px;
+	margin: 0 auto;
+	padding-right: 0.2em;
+}
+
+/* COURSE 1
+This is some pretty advanced CSS. I stole it from the
+Udacity site and don't fully understand the first 2 lines.
+I could look up background-repeat and linear-gradient
+if I wanted to, but for now I don't really care :) */
+.button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 4px 12px;
+  font-size: 14px;
+  line-height: 1.7;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button-primary {
+	background-image: linear-gradient(to bottom,#f59a18 0,#f27d13 100%);
+  background-repeat: repeat-x;
+  border-color: #c7640b;
+  color: #fff;
+  background-color: #f6a926;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 4px 12px;
+  font-size: 1.4em;
+  line-height: 1.7;
+  cursor: pointer;
+}
+
+.button-primary:hover {
+	border-color: #974c08;
+  background-image: -webkit-linear-gradient(#ffb141,#f59a18 20%,#f27d13);
+  background-image: linear-gradient(#ffb141,#f59a18 20%,#f27d13);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffb141', endColorstr='#fff27d13', GradientType=0);
+}
+
+.button-primary:active {
+	border-color: #974c08;
+  background-image: -webkit-linear-gradient(#e98e0a,#f27d13 20%,#f27d13);
+  background-image: linear-gradient(#e98e0a,#f27d13 20%,#f27d13);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe98e0a', endColorstr='#fff27d13', GradientType=0);
+}
+
+.button-secondary {
+	color: #fff;
+  background-color: #1199c3;
+  border-color: #5891b0;
+  background-image: -webkit-linear-gradient(top,#52b6ee 0,#409cd3 100%);
+  background-image: linear-gradient(to bottom,#52b6ee 0,#409cd3 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff52b6ee', endColorstr='#ff409cd3', GradientType=0);
+  border-color: #2a82b6;
+  margin: 1.5em;
+}
+
+.button-secondary:hover {
+  border-color: #21648c;
+  background-image: -webkit-linear-gradient(#74ceff,#52b6ee 20%,#409cd3);
+  background-image: linear-gradient(#74ceff,#52b6ee 20%,#409cd3);
+  background-repeat: no-repeat;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff74ceff', endColorstr='#ff409cd3', GradientType=0);
+}
+
+.button-secondary:active {
+  border-color: #21648c;
+  background-image: -webkit-linear-gradient(#3badec,#409cd3 20%,#409cd3);
+  background-image: linear-gradient(#3badec,#409cd3 20%,#409cd3);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3badec', endColorstr='#ff409cd3', GradientType=0);
+}
+
+/* EVERYTHING BELOW HERE ONLY APPLIES TO CERTAIN PAGES */
+
+.submission-text {
+	width : 100%;
+	margin: 0 0 0.5em 0;
+	padding: 0.5em;
+	background-color: rgba(0, 0, 0, 0.7);
+	color : white;
+	font-weight: normal;
+	position: relative;
+	bottom: 10px;
+}
+
+.submission-form {
+	font-size : 1.2em;
+}
+.submission-form input,
+.submission-form textarea {
+	margin-bottom: 20px;
+	min-height: 48px;
+	font-size: 1.2em;
+	max-width: 100%;
+}
+
+
+/* MAY WANT TO SEPARATE THE FOLLOWING CSS INTO
+A SEPARATE FILE FOR "CODEPEN EXAMPLES"*/
+.cp-example .cp-title {
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: .3em;
+	color: #76daff;
+	font-weight: lighter;
+}
+
+.cp-example {
+	font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+	font-weight: lighter;
+	padding: 0 1em;
+	width: 100%;
+	background-color: #3d3d3e;
+	border: solid white 4px;
+	border-radius: 8px;
+}
+
+.cp-text {
+	width : 100%;
+	color : white;
+	padding-bottom: 0.5em;
+}
+
+.cp-embed {
+	border-top: solid 1px #2D2D2D;
+}
+
+@media screen and (min-width: 650px) {
+	.cp-example {
+		width : 50%;
+	}
+}
+/* END CODEPEN EXAMPLES */
+
+
+/* MAY WANT TO SEPARATE THE FOLLOWING CSS INTO
+A SEPARATE FILE FOR "HOME PAGE" AND "STUDENT NOTES" */
+.panel {
+	background-image: url("/images/ipnd.png");
+	background-size: cover;
+	background-position: center;
+	height: 290px;
+	text-align: center;
+	margin : 5px auto;
+	max-width: 470px;
+	width: 100%;
+}
+
+.panel-title {
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 90%;
+	font-weight: normal;
+	padding: 20px 40px;
+	margin-top: 100px;
+	color : white;
+	font-size: 1.4em;
+}
+/* END "HOME PAGE" / "STUDENT NOTES" CSS */
+
+.caption {
+	font-size : 0.8em;
+	font-weight:bold;
+	text-align: center;
+}
+
+.embedded-video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+}
+
+.embedded-video iframe {
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+
+@media screen and (max-width:750px) {
+	.video {
+		width: 100%;
+	}
+}

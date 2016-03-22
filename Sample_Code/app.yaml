@@ -1,0 +1,26 @@
+# COURSE 4:
+# You will learn a bit about how this file works in course 4.
+# Its primary role is to tell App Engine how to actually build
+# the web app you will make.
+application: learn-2-code
+version: 7
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+- url: /images
+  static_dir: images
+- url: /templates
+  static_dir: html_templates
+  application_readable: true
+- url: /.*
+  script: notes.application
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest

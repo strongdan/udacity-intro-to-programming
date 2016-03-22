@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="title">Nanodegree Student Projects</h1>
+<div class="section">
+	<p class="description">
+		When you complete the final project submission your project reviewer will
+		give you a secret code which will let you add your own project to this list.
+	</p>
+	<form action="add">
+		<button class="button button-secondary">Add Your Notes</button>
+	</form>
+	<hr>
+</div>
+
+<div class="row">
+{% for sub in submissions %}
+	{% if sub.image_url %}
+	<div class="panel" style="background-image: url({{ sub.image_url }})" alt="">
+	{% else %}
+	<div class="panel">
+	{% endif %}
+		<a class="panel-title" href="{{ sub.link }}">{{ sub.name }}'s Project</a>
+		<p class="submission-text">{{ sub.description }}</p>
+
+	</div>
+{% endfor %}
+</div>
+
+{% endblock %}

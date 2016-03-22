@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+	<!-- Everything in the <head> element is extra information for the browser -->
+	<head>
+		<title>Andy Brown's IPND Notes</title>
+
+		<style>
+			/* COURSE 1 - This little bit of CSS is weird. The page_name between
+			the braces is what's called a "variable" and you'll learn more about
+			those in course 2. */
+			#{{ page_name }} {
+				color: white;
+			}
+		</style>
+
+		<!-- COURSE 5 - This <meta> tag does something called "setting the viewport".
+		It's this line of code that makes my page show up nicely on mobile devices.-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="/images/favicon.ico">
+		<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+		<link rel="stylesheet" href="/stylesheets/skin.css">
+	</head>
+
+	<body>
+		<!-- This is the Header / Navigation section. -->
+		<div class="row header">
+			{% if page_name == "home" %}
+			<div class="section">
+				<img class="top-image" src="/images/andy.png" alt="photo of Andy">
+				<h1>Andy Brown's IPND Notes</h1>
+			</div>
+			{% endif %}
+			<ul class="nav-list">
+				<li class="nav-item nav-item-left"><a id="home" href="/">Home</a></li>
+				{% for s in sections %}
+				<li class="nav-item nav-item-right"><a href="/{{ s.href }}" id="{{ s.id }}">{{ s.short_title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+
+		<!-- This is where all the other pages get injected
+		into the middle of base.html -->
+		{% block content %}
+		{% endblock %}
+
+		<!-- This is the Footer. -->
+		<div class="row footer">
+			<h1>Want to learn to code?</h1>
+			<form action="https://www.udacity.com/course/nd000">
+				<button class="button button-primary">Take the Nanodegree!</button>
+			</form>
+		</div>
+	</body>
+
+</html>
+{% endautoescape %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 class="title">Codepen Examples</h1>
+
+<div class="section">
+	{% for section in examples %}
+	<div class="table-of-contents-entry">
+		<a class="item-title" href="#section-{{ loop.index }}">{{ section.title }}</a>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="row cp-examples">
+{% for section in examples %}
+	<div class="section" id="section-{{ loop.index }}">
+		<h2 class="section-title">{{ section.title }}</h2>
+		<p>{{ section.description }}</p>
+	</div>
+	{% for ex in section.examples %}
+	<div class="cp-example" id="{{ ex.code_pen_id }}">
+		<div class="section cp-text">
+			<h3 class="cp-title">{{ ex.title }}</h3>
+			<p>{{ ex.description }}</p>
+		</div>
+		<div class="cp-embed codepen">
+			<p data-height="268" class="codepen" data-theme-id="11790" data-slug-hash="{{ ex.code_pen_id }}" data-default-tab="result" data-user="{{ ex.user_name }}">
+				See the Pen <a href='http://codepen.io/{{ ex.user_name }}/pen/{{ ex.code_pen_id }}/'>{{ ex.code_pen_id }}</a> by {{ ex.user_name }} (<a href='http://codepen.io/{{ ex.user_name }}'>@{{ ex.user_name }}</a>) on <a href='http://codepen.io'>CodePen</a>.
+			</p>
+		</div>
+		<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+	</div>
+	{% endfor %}
+	{% endfor %}
+</div>
+
+{% endblock %}
