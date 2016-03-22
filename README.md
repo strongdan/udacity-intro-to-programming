@@ -1,19 +1,19 @@
 # udacity-intro-to-programming
 ## Introduction to Programming Nanodegree
 
-[ ] Watch the Welcome Lesson
-[ ] Review the Student Handbook
-[ ] Complete The Basics of the Web and HTML
+[x] Watch the Welcome Lesson
+[x] Review the Student Handbook
+[x] Complete The Basics of the Web and HTML
 
-[ ] Complete and submit Stage 0:​Getting Started with HTML for feedback
+[x] Complete and submit Stage 0:​Getting Started with HTML for feedback
 on your progress so far!
-[ ] Complete Nanodegree Orientation
-[ ] Complete How Learning to Code Works
+[x] Complete Nanodegree Orientation
+[x] Complete How Learning to Code Works
 
-[ ]Find out what you’ll make in Stage 1
-[ ] Review The Basics of the Web and HTML (if needed)
-[ ] Complete 1.1 Creating a Structured Document with HTML
-[ ] Complete Work Session 1 and share your work in the discussion forum
+[x]Find out what you’ll make in Stage 1
+[x] Review The Basics of the Web and HTML (if needed)
+[x] Complete 1.1 Creating a Structured Document with HTML
+[x] Complete Work Session 1 and share your work in the discussion forum
 [ ] Complete 1.2 Adding CSS Style to HTML Structure
 [ ] Complete Work Session 2 and share your work in the discussion forum
 [ ] Complete and submit Stage 1:​M​ake a Web Page
