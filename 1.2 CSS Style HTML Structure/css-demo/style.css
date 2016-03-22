@@ -1,13 +1,22 @@
-/* This is a CSS comment.*/
+.image {
+  max-width: 460;
+  display: flex;
+}
+
+.image {
+  max-width: 705;
+  display: flex;
+}
+
+.app {
+  display: -webkit-flex;
+  display: flex;
+}
 
 *{
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/*
-Comments are only to help PEOPLE read a code file. The
-computer ignores them.
-*/

@@ -1,6 +1,38 @@
+.name_header {
+  color: #0D370D;
+  font-family: sans-serif;
+}
+
+.sub_header {
+  color: #0D370D;
+  font-family: sans-serif;
+  border: 0px;
+}
+
+.places {
+  font-family: sans-serif;;
+
+}
+
+.places {
+  color: #3d5e3d;
+  text-align: left;
+  max-width: 50%;
+}
+
 *{
+  align-content: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.image {
+  max-width: 50%;
+  align-content: center;
+}
+
+.place_list {
+  color: #061b06;
 }
