@@ -22,23 +22,23 @@ on your progress so far!
 
 [x] Complete Work Session 1 and share your work in the discussion forum
 
-[ ] Complete 1.2 Adding CSS Style to HTML Structure
+[x] Complete 1.2 Adding CSS Style to HTML Structure
 
-[ ] Complete Work Session 2 and share your work in the discussion forum
+[x] Complete Work Session 2 and share your work in the discussion forum
 
-[ ] Complete and submit Stage 1:​M​ake a Web Page
+[x] Complete and submit Stage 1:​M​ake a Web Page
 
 
 ## Stage 2: Code Your Own Quiz
-[ ] Find out what you’ll do in Stage 2
+[x] Find out what you’ll do in Stage 2
 
-[ ] Complete 2.1 Introduction to “Serious” Programming
+[x] Complete 2.1 Introduction to “Serious” Programming
 
-[ ] Complete Work Session 1 and share your work in the discussion forum
+[x] Complete Work Session 1 and share your work in the discussion forum
 
-[ ] Complete 2.2 Variables and Strings
+[x] Complete 2.2 Variables and Strings
 
-[ ] Complete Work Session 2 and share your work in the discussion forum
+[x] Complete Work Session 2 and share your work in the discussion forum
 
 [ ] Complete 2.3 Input → Function → Output
 

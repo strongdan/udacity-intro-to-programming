@@ -1,0 +1,59 @@
+body {
+  background-color: #D3D3D3;
+  position: center;
+  margin: 5px 5px 5px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.name_header {
+  color: #0D370D;
+  font-family: sans-serif;
+  margin: 20px;
+  margin-left: 100px;
+}
+
+.sub_header {
+  color: #0D370D;
+  font-family: sans-serif;
+  border: 0px;
+  padding: 0px;
+  margin: 20px;
+  margin-left: 180px;
+  margin-right: auto;
+}
+
+.places {
+  color: #FF8600;
+  text-align: left;
+  max-width: 30%;
+  background-color: #FFDAB9;
+  padding: 10px;
+  margin: 20px;
+}
+
+.to_visit {
+  color: #3d5e3d;
+  text-align: left;
+  max-width: 30%;
+  background-color: #d2e7d2;
+  padding: 10px;
+  margin: 20px;
+}
+
+*{
+  align-content: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.image {
+  max-width: 100%;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 130px;
+  margin-right: auto;
+
+}
