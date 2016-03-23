@@ -1,23 +1,32 @@
+body {
+  background-color: #D3D3D3;
+  position: center;
+  margin: 5px;
+}
+
 .name_header {
   color: #0D370D;
   font-family: sans-serif;
+  margin: 20px;
 }
 
 .sub_header {
   color: #0D370D;
   font-family: sans-serif;
   border: 0px;
+  padding: 0px;
+  margin: 20px;
+  margin-right: auto;
 }
 
 .places {
-  font-family: sans-serif;;
-
-}
-
-.places {
-  color: #3d5e3d;
+  color: #FF8600;
   text-align: left;
   max-width: 50%;
+  background-color: #FFDAB9; 
+  font-family: sans-serif;
+  padding: 10px;
+  margin: 20px;
 }
 
 *{
@@ -28,11 +37,21 @@
   box-sizing: border-box;
 }
 
+
 .image {
   max-width: 50%;
-  align-content: center;
+  padding: 10px;
+  margin: 10px;
+  margin-right: auto;
+  
 }
 
-.place_list {
-  color: #061b06;
+.to_visit {
+  color: #3d5e3d;
+  text-align: left;
+  max-width: 50%;
+  background-color: #d2e7d2;
+  font-family: sans-serif;
+  padding: 10px;
+  margin: 20px;
 }
