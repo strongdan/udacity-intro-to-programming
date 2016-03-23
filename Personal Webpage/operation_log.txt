@@ -1,9 +1,0 @@
-[19104:5540:0323/084701:VERBOSE1:crash_service_main.cc(68)] Session start. cmdline is [--reporter-url=http://54.249.141.255:1127/post --application-name=Atom --v=1]
-[19104:5540:0323/084701:VERBOSE1:crash_service.cc(142)] window handle is 00710D54
-[19104:5540:0323/084701:VERBOSE1:crash_service.cc(290)] pipe name is \\.\pipe\Atom Crash Service
-dumps at 
-[19104:5540:0323/084701:VERBOSE1:crash_service.cc(294)] checkpoint is crash_checkpoint.txt
-server is http://54.249.141.255:1127/post
-maximum 128 reports/day
-reporter is electron-crash-service
-[19104:5540:0323/084701:ERROR:crash_service.cc(301)] could not start dumper
