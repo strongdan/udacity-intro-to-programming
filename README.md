@@ -40,11 +40,11 @@ on your progress so far!
 
 [x] Complete Work Session 2 and share your work in the discussion forum
 
-[ ] Complete 2.3 Input → Function → Output
+[x] Complete 2.3 Input → Function → Output
 
-[ ] Complete Work Session 3 and share your work in the discussion forum
+[x] Complete Work Session 3 and share your work in the discussion forum
 
-[ ] Complete 2.4 Control Flow & Loops: If and While
+[x] Complete 2.4 Control Flow & Loops: If and While
 
 [ ] Complete 2.5 Debugging
 

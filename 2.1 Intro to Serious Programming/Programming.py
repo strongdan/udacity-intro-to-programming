@@ -11,3 +11,8 @@ print ( 3 )
 print ( 1 + 1 )
 
 # Add your own code and notes here
+
+first_zip = text.find('zip')
+print text.find('zip', first_zip + 1)
+
+print text.find('zip', text.find
