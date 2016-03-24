@@ -46,9 +46,9 @@ on your progress so far!
 
 [x] Complete 2.4 Control Flow & Loops: If and While
 
-[ ] Complete 2.5 Debugging
+[x] Complete 2.5 Debugging
 
-[ ] Complete Work Session 4 and share your work in the discussion forum
+[x] Complete Work Session 4 and share your work in the discussion forum
 
 [ ] Complete 2.6 Structured Data: Lists & For Loops
 
