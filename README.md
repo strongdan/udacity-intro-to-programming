@@ -50,7 +50,7 @@ on your progress so far!
 
 [x] Complete Work Session 4 and share your work in the discussion forum
 
-[ ] Complete 2.6 Structured Data: Lists & For Loops
+[x] Complete 2.6 Structured Data: Lists & For Loops
 
 [ ] Complete 2.7 How to Solve Problems
 
