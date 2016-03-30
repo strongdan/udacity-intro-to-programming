@@ -14,3 +14,9 @@ myList = [1, 2, [3, 4]]
 print_all_elements(myList)
 
 # Add your own code and notes here
+
+count = 0
+for e in U:
+    if e[0] == 'U'
+        count = count + 1
+return count

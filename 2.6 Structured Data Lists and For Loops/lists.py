@@ -13,3 +13,11 @@ print p[0]
 print p[2:4]
 
 # Add your own code and notes here
+
+def find_element(lst, val):
+    if val in lst:
+        return lst.index(val)
+    elif val not in lst:
+        return -1
+        
+    #output index of list element

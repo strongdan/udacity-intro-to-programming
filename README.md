@@ -60,11 +60,11 @@ on your progress so far!
 
 
 ## Stage 3: Create a Movie Website
-[ ] Find out what you’ll do in Stage 3
+[x] Find out what you’ll do in Stage 3
 
-[ ] Complete 3.1 Introduction to Abstraction
+[x] Complete 3.1 Introduction to Abstraction
 
-[ ] Complete 3.2 Use Functions
+[x] Complete 3.2 Use Functions
 
 [ ] Complete 3.3a Use Classes- Draw Turtles
 
