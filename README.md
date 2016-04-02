@@ -79,7 +79,7 @@ on your progress so far!
 [ ] Complete and submit Stage 3:​Create a Movie Website
 
 ## Stage 4: Project Compass
-[ ] Find out what you’ll do in Stage 4
+[x] Find out what you’ll do in Stage 4
 
 [ ] Complete 4.1 Front-End Programming
 
@@ -98,9 +98,9 @@ with your choice. For reference, the pacing to this point has been approx. 1-2
 lessons per week; however, you will need to consider your unique goals and the
 deadline to submit your Stage 5 project.
 
-[ ] Find out what you’ll do in Stage 5
+[x] Find out what you’ll do in Stage 5
 
-[ ] Choose one of the five paths (front-end, back-end, iOS, Android, or data
+[x] Choose one of the five paths (front-end, back-end, iOS, Android, or data
 analysis)
 
 [ ] Complete and submit Stage 5​: Choose Your Next Steps
