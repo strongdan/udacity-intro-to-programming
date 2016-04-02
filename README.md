@@ -81,15 +81,15 @@ on your progress so far!
 ## Stage 4: Project Compass
 [x] Find out what you’ll do in Stage 4
 
-[ ] Complete 4.1 Front-End Programming
+[x] Complete 4.1 Front-End Programming
 
 [ ] Complete 4.2 Back-End Programming
 
 [ ] Complete 4.3 Mobile Programming
 
-[ ] Complete 4.4 Data Analysis
+[x] Complete 4.4 Data Analysis
 
-[ ] Complete and submit Stage 4:​Project Compass
+[x] Complete and submit Stage 4:​Project Compass
 
 ## Stage 5: Choose Your Path
 With your remaining time, you will choose your own path. We encourage you to
