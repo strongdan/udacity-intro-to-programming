@@ -1,0 +1,51 @@
+Step 1 - Ask what the inputs are
+	* Inputs - two dates
+
+Step 2 - Ask what the outputs are
+	* Outputs - return the number of days between first and second date
+
+Step 3 - Work throuhg 
+	* work out examples to figure out relationship between inputs and outputs
+	1. daysBetweenDates(2012, 12, 7, 2012, 12, 7)  -> 0
+	2. daysBetweenDates(2012, 12, 7, 2012, 12, 8) -> 1
+	3. daysBetweenDates(2012, 12, 8, 2012, 12, 7) -> undefined
+	4. daysBetweenDates(2012, 6, 29, 2013, 6, 29) -> 365
+	5. daysBetweenDates(2012, 6, 29, 2013, 6, 31) -> undefined
+
+	* try an example, adding up each month's days, then write into an algorithm:
+		days = days in month 1 - day 1
+		month1 += 1
+		while month1 < month2:
+			days += # of days in month1
+			month1 += 1
+		days += day2
+		while year 1 < year2:
+			days += days in year1
+		
+		- Need to simplify (doesn't handle the case when days are in the same month
+				or month 2 before month2 or accounting for leap years)
+	* Simpler way:
+		# count days from 
+		dates = 0
+		while date 1 is before date2:
+			date1 = advance to next day
+			days += 1
+			
+Step 4 - Simple Mechanical Solution
+
+Step 5 - Write Code 
+	* Simple mechanical solution
+	* What should we write first?
+		nextDay(year, month, day) -> to get next day for simple case
+	
+	- Procedure (assuming all months have 30 days):
+		
+
+nextDay()
+
+isLeapYear()
+
+daysInMonth()
+
+daysBetweenDates()
+		- 
