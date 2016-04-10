@@ -22,6 +22,15 @@ don't specify the value to return. ___2___ can be standard data types such as st
 tuple, and ___4___ or can be more complicated such as objects and lambda functions.'''
 
 # The answer for ___1___ is 'function'. Can you figure out the others?
+# ___2___ => 
+# ___3___ => 
+# ___4___ => 
+
+level_1 = ''''''
+
+level_2 = ''''''
+
+level_3 = ''''''
 
 word_list = ['___1___', '___2___', '___3___', '___4___']
 # We've also given you a file called fill-in-the-blanks.pyc which is a working version of the project.
