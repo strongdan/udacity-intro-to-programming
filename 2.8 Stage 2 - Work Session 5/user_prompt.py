@@ -1,10 +1,11 @@
-blanks = ["___1___", "___2___", "___3___", "___4___"]
+blanks = ['___1___', '___2___', '___3___', '___4___']
 
 # - Level 0 Text - Easy
-sample = '''A ___1___ is created with the def keyword. You specify the inputs a ___1___ takes by
-adding ___2___ separated by commas between the parentheses. ___1___s by default return ___3___ if you
-don't specify the value to return. ___2___ can be standard data types such as string, number, dictionary,
-tuple, and ___4___ or can be more complicated such as objects and lambda functions.'''
+sample = '''A ___1___ is created with the def keyword. You specify the inputs a ___1___
+takes by adding ___2___ separated by commas between the parentheses. ___1___s
+by default return ___3___ if you don't specify the value to return. ___2___
+can be standard data types such as string, number, dictionary, tuple, and
+___4___ or can be more complicated such as objects and lambda functions.'''
 
 sample_answers = ['function', 'variables', 'outputs', 'lists']
 
@@ -58,19 +59,22 @@ lvl3_answers = ['lambda', 'bitwise', 'comprehension', 'tuple']
 
 def user_lvl():
     # user first selects a level
-    user_in = int(input("Please select a level from 0 to 3:  ))
-
+    user_in = input('Please select a level from 0 (Easy) to 3 (Hard):')
+                    
     # prompt a user with a sentence containing several blanks
     # The user should then be asked to fill in each blank appropriately to complete the sentence                   
-    if user_in == 0
-        w1, w2, w3, w4 = input("Please type a word for each of the blanks above, separated by spaces.\n" + sample + '\n\nWords: ').split() 
-    elif user_in == 1
-        w1, w2, w3, w4 = input("Please type a word for each of the blanks above, separated by spaces.\n" + lvl_1 + '\n\nWords: ').split() 
-    elif user_in == 2
-        w1, w2, w3, w4 = input("Please type a word for each of the blanks above, separated by spaces.\n" + lvl_2 + '\n\nWords: ').split()
-    elif:
-        w1, w2, w3, w4 = input("Please type a word for each of the blanks above, separated by spaces.\n" + lvl_3 + '\n\nWords: ').split() 
+    if int(user_in) == 0:
+        w1, w2, w3, w4 = input('Please type a word for each of the blanks below, separated by spaces:\n' + sample + '\n\nWords: ').split() 
+    elif int(user_in) == 1:
+        w1, w2, w3, w4 = input('Please type a word for each of the blanks below, separated by spaces:\n' + lvl_1 + '\n\nWords: ').split() 
+    elif int(user_in) == 2:
+        w1, w2, w3, w4 = input('Please type a word for each of the blanks below, separated by spaces:\n' + lvl_2 + '\n\nWords: ').split()
+    elif int(user_in) == 3:
+        w1, w2, w3, w4 = input('Please type a word for each of the blanks below, separated by spaces:\n' + lvl_3 + '\n\nWords: ').split() 
     else:
-        break
-                    
-print(w1, w2, w3, w4)
+        print('That is not a valid selection')
+        pass
+    #Need to figure out how to deal with UnboundLocalError (if no 'w' values are entered)
+    print(w1, w2, w3, w4)
+
+user_lvl()
