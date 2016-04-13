@@ -84,9 +84,9 @@ on your progress so far!
 
 [x] Complete 4.1 Front-End Programming
 
-[ ] Complete 4.2 Back-End Programming
+[x] Complete 4.2 Back-End Programming
 
-[ ] Complete 4.3 Mobile Programming
+[x] Complete 4.3 Mobile Programming
 
 [x] Complete 4.4 Data Analysis
 
