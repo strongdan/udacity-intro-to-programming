@@ -1,0 +1,10 @@
+How to Solve Problems:
+1. Figure out what the inputs are
+  - dates in day, month, and year (integers)
+      (year1, month1, day1, year2, month2, day2)
+  - second date not before first (no time travel)
+
+2. Figure out what the outputs are
+  - return a number (days between first and second date)
+  
+3. Solve the Problem
