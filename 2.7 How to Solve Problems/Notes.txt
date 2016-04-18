@@ -8,6 +8,7 @@ How to Solve Problems:
   - return a number (days between first and second date)
   
 3. Solve the Problem
+
   - Pseudocode: 
     days = days_in_month1 - day1
     month1 += 1
@@ -16,3 +17,17 @@ How to Solve Problems:
     days += day2
     while year1 < year2:
       days += days in year1
+    (doesn't handle a lot of cases)
+    
+  - Simple solution:
+    days = 0
+    while date1 is before date2:
+      date1 = advance to next day
+      days += 1
+    return days
+      
+  - 
+
+4. Simple Mechanical Solution
+
+      
