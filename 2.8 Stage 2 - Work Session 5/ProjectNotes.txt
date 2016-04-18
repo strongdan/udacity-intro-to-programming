@@ -1,0 +1,21 @@
+Now that we have a working version of the Mad Libs generator, let's run it and see it in action! Once you've downloaded madlibs_generator.py from the previous section, open up your command line interface (Terminal if you're on a Mac or Linux machine, Git Bash if you're on Windows).
+
+Note: The file may not immediately download and instead open in a new browser tab. If so, you can copy and paste the code into a new file in your text editor and name it madlibs_generator.py. Save it somewhere easy to access like your Desktop.
+
+First cd to the directory where you've saved madlibs_generator.py. If you just downloaded the file and didn't move it elsewhere, it's probably in Downloads or Desktop.
+
+Now enter the command python madlibs_generator.py (if you're using Git Bash on Windows, enter the command winpty python madlibs_generator.py). The quiz should start running and you can input your answers straight into the command line!
+
+Project Specification
+
+Code a Fill-in-the-Blanks Quiz
+
+You've built a Mad-Libs game with some help from Sean. Now you'll work on your own game to practice your skills and demonstrate what you've learned.
+
+For this project, you'll be building a fill-in-the-blanks quiz. Your quiz will prompt a user with a sentence containing several blanks. The user should then be asked to fill in each blank appropriately to complete the sentence. This can be used as a study tool to help you remember important vocabulary!
+
+Note: Your game will have to accept user input so, like the Mad Libs generator, you won't be able to run it using Sublime's Build feature. Instead you'll need to run the program in Terminal or IDLE. Refer to Work Session 5 if you need a refresher on how to do this.
+
+Once you've created the game you should submit your Python file (named fill-in-the-blanks.py). Your project reviewer will review and provide feedback on two aspects of your submission: the game itself and the Python code you've written.
+
+In the Downloadables section below, you'll find a starter code file (fill-in-the-blanks.py) to help you get going. We've also given you a file called fill-in-the-blanks.pyc which is a working version of the project. A .pyc file is a Python file that has been translated into "byte code". This means the code will run the same as the original .py file, but if you open it in Sublime it won't look like Python code! You can run it just like a regular Python file to see how your code should behave.
