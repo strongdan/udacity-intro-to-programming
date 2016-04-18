@@ -19,3 +19,5 @@ Note: Your game will have to accept user input so, like the Mad Libs generator, 
 Once you've created the game you should submit your Python file (named fill-in-the-blanks.py). Your project reviewer will review and provide feedback on two aspects of your submission: the game itself and the Python code you've written.
 
 In the Downloadables section below, you'll find a starter code file (fill-in-the-blanks.py) to help you get going. We've also given you a file called fill-in-the-blanks.pyc which is a working version of the project. A .pyc file is a Python file that has been translated into "byte code". This means the code will run the same as the original .py file, but if you open it in Sublime it won't look like Python code! You can run it just like a regular Python file to see how your code should behave.
+
+Specifications: https://github.com/udacity/Project-Descriptions-for-Review/blob/master/Programming%20Foundations/Code%20your%20own%20quiz.md
