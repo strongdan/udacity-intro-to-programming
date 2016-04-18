@@ -1,0 +1,24 @@
+Project Specification
+
+By the end of this stage, you will be able to use other people's existing code in your own programming projects. You will write code to store a list of your favorite movies, including box art imagery and a movie trailer URL. You will then use your code to generate a static web page allowing visitors to browse their movies and watch the trailer.
+
+Project Submission
+You will write code to store a list of your favorite movies, including box art imagery and a movie trailer URL. You will then use your code to generate a static web page allowing visitors to browse their movies and watch the trailer.
+
+How will I complete this project?
+
+If you haven't already, install Python
+Create a data structure (i.e. a Python Class) to store your favorite movies, including movie title, box art URL (or poster URL) and a YouTube link to the movie trailer.
+Create multiple instances of that Python Class to represent your favorite movies; group all the instances together in a list.
+To help you generate a website that displays these movies, we have provided a Python module called fresh_tomatoes.py - this module has a function called open_movies_page that takes in one argument, which is a list of movies and creates an HTML file which visualizes all of your favorite movies.
+Ensure your website renders correctly when you attempt to load it in a browser.
+Get started with this helpful guide.
+
+For this stage, you will need to submit a zip of your project files saved as movie_website.zip. Your zip should include three Python files: media.py, entertainment_center.py, and fresh_tomatoes.py. Your submission will be evaluated according to the following rubric. If you cannot see the image below, go to the project rubrics page here.
+
+Rubric:
+https://review.udacity.com/#!/projects/3553029266/rubric
+
+Project Description:
+https://docs.google.com/document/d/1xyjtEVPxDqmDHs6Gl9vZsD04TWkX0tWKyMDZkHAK33Y/pub?embedded=true
+
